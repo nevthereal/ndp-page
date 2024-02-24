@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "Protest-Strike";
+  src: url(/ProtestStrike-Regular.ttf);
+}
+
+.hero {
+  @apply h-screen w-screen bg-cover bg-top bg-no-repeat;
+  background-image: url("../assets/herobg.jpeg");
+}
