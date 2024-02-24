@@ -4,6 +4,6 @@
 }
 
 .hero {
-  @apply h-screen w-screen bg-cover bg-top bg-no-repeat;
+  @apply h-screen w-screen bg-cover bg-fixed bg-center bg-no-repeat;
   background-image: url("../assets/herobg.jpeg");
 }
