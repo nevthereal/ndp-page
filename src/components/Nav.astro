@@ -1,15 +1,27 @@
+<style>
+  .navbox {
+    @apply relative aspect-square rounded-xl text-2xl;
+  }
+  .tooltip {
+    @apply absolute -translate-y-[105%] translate-x-8 text-xl font-medium opacity-0 duration-200 ease-in-out group-hover:opacity-100;
+  }
+</style>
+
 <nav>
   <div
-    class="md:flex hidden flex-col backdrop-blur-xl bg-slate-200/50 border border-slate-300 w-min p-4 rounded-xl text-slate-800 gap-4 md:fixed top-1/2 -translate-y-1/2 -left-8 hover:left-4 duration-200 ease-in-out"
+    class="md:flex hidden flex-col backdrop-blur-xl bg-slate-200/50 border border-slate-300 w-min p-4 gap-4 rounded-xl text-slate-800 md:fixed top-1/2 -translate-y-1/2 left-4"
   >
-    <a class="text-2xl" href="/">
+    <a class="navbox group" href="/">
       <i class="fa-solid fa-camera-retro"></i>
+      <p class="tooltip">Home</p>
     </a>
-    <a class="text-2xl" href="/blog">
+    <a class="navbox group" href="/blog">
       <i class="fa-solid fa-newspaper"></i>
+      <p class="tooltip">Blog</p>
     </a>
-    <a class="text-2xl" href="/social">
+    <a class="navbox group" href="/social">
       <i class="fa-solid fa-address-card"></i>
+      <p class="tooltip">Social</p>
     </a>
   </div>
 </nav>
