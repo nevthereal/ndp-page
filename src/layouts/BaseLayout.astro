@@ -1,4 +1,5 @@
 ---
+import { ViewTransitions } from "astro:transitions";
 import Nav from "../components/Nav.astro";
 import "../styles/globals.css";
 
@@ -23,6 +24,7 @@ let { title } = Astro.props;
       referrerpolicy="no-referrer"
     />
     <title>Noah Dal Ben - {title}</title>
+    <ViewTransitions />
   </head>
   <body class="prose-headings:font-[Protest-Strike]">
     <Nav />
