@@ -1,6 +1,12 @@
 ---
 import Nav from "../components/Nav.astro";
 import "../styles/globals.css";
+
+interface Props {
+  title: string;
+}
+
+let { title } = Astro.props;
 ---
 
 <html lang="en">
@@ -16,7 +22,7 @@ import "../styles/globals.css";
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Astro</title>
+    <title>Noah Dal Ben - {title}</title>
   </head>
   <body class="prose-headings:font-[Protest-Strike]">
     <Nav />
